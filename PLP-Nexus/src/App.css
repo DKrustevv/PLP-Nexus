@@ -1,0 +1,23 @@
+/* Define a fixed height for the watch images */
+.watch-image {
+  height: 200px; /* Adjust this value as needed */
+  width: auto; /* To maintain aspect ratio */
+}
+
+/* Optionally, you can apply additional styling for the watch cards */
+.watch-card {
+  /* Your card styling here */
+  /* For example, you can set margin, padding, border, etc. */
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Center the watch cards */
+.watches-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
