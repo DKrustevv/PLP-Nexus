@@ -3,7 +3,7 @@ import { AppBar, Toolbar, Typography, Button, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Logo from '../../assets/images/239-2398382_logo-store-png-clothing-shop-logo-png.png';
-import './NavBar.css'; // Import a separate CSS file for custom styling (optional)
+import './NavBar.css'; 
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +15,6 @@ const Navbar = () => {
   return (
     <AppBar position="static">
       <Toolbar>
-        {/* Burger Menu */}
         <IconButton
           edge="start"
           color="inherit"
