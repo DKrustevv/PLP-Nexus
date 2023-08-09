@@ -1,22 +1,101 @@
+.watch-card {
+  margin-top: 20px;
+  position: relative;
+  padding: 30px;
+  box-shadow: 0 2px 41px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  transition: box-shadow 0.3s;
+  overflow: hidden;
+  text-align: center; 
+  border-radius: 1000px;
+}
+.watch-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03); 
+}
+
 
 .watch-image {
-  height: 200px; 
-  width: auto; 
+  height: 300px;
+  width: 270px;
+  object-fit: contain;
+}
+.watch-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 
-.watch-card {
+.watch-description {
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 8px;
+}
 
-  margin: 10px;
+
+.watch-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 8px;
+}
+.watch-card .add-to-cart-button {
+  margin-top: 10px; 
+}
+
+.watch-ratings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.MuiRating-iconFilled {
+  color: #fbc02d;
+  font-size: 1.4rem;
+}
+.MuiRating-iconEmpty {
+  color: #e0e0e0;
+  font-size: 1.4rem;
+}
+.watch-details {
   padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 
 .watches-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px; 
+  justify-items: center; 
+
+
+  @media (max-width: 1342px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr)); */
+  }
+
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); 
+  }
+
+  @media (max-width: 662px) {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+}
+
+
+.watches-container-wrapper {
+  max-width: 1500px; 
+  margin: 0 auto; 
+}
+.load-more-button {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px; 
+}
+
+.load-more-button svg {
+  font-size: 60px; 
 }
