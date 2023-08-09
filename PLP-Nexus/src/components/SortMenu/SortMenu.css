@@ -1,0 +1,46 @@
+.sort-menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.sort-menu {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin: 8px;
+}
+
+label {
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.sort-select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  appearance: none;
+}
+
+.sort-select:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.sort-select option {
+  padding: 8px;
+}
+
+.total-watches {
+  margin-left: 16px;
+  font-weight: bold;
+  color: #666;
+}
