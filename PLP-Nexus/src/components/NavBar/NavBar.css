@@ -1,7 +1,14 @@
-/* NavBar.css */
+
 .logo {
-    width: 100px; /* Adjust the width as needed */
-    margin: 15px;
-   
+  width: 170px;
+  margin: 15px;
+  margin-left: 50px;
+}
+
+
+@media (max-width: 600px) {
+  .logo {
+    width: 130px; 
+    margin-left: 20px; 
   }
-  
+}
